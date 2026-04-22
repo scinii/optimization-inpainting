@@ -11,9 +11,8 @@ $$\mathcal{A}(X) = [\Omega \odot X_R \quad \Omega \odot X_G \quad \Omega \odot X
 
 ### Mathematical Definition
 The inpainting task is framed as a minimization problem using nuclear norm regularization to promote low-rank structures in the recovered image:
-$$
-\min_{X} \left\{ \frac{1}{2}\|\mathcal{A}(X) - X_{corrupt}\|_2^2 + \sigma\|X\|_* + \sigma\|\tilde{X}\|_* \right\}
-$$
+
+<img src="https://latex.codecogs.com/svg.image?\min_{X}&space;\left\{&space;\frac{1}{2}\|\mathcal{A}(X)&space;-&space;X_{corrupt}\|_2^2&space;&plus;&space;\sigma\|X\|_*&space;&plus;&space;\sigma\|\tilde{X}\|_*&space;\right\}" title="\min_{X} \left\{ \frac{1}{2}\|\mathcal{A}(X) - X_{corrupt}\|_2^2 + \sigma\|X\|_* + \sigma\|\tilde{X}\|_* \right\}" />
 
 Where:
 * $\sigma > 0$ is a regularization parameter.
