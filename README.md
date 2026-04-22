@@ -23,7 +23,9 @@ Where:
 
 ### Algorithm
 The solution is reached by finding a fixed point of the operator $T$:
-$$T(Y) = Y - \text{prox}_{\gamma g}(Y) + \text{prox}_{\gamma f}(2\text{prox}_{\gamma g}(Y) - Y - \gamma\mathcal{A}(\text{prox}_{\gamma g}(Y) - X_{corrupt}))$$
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.image?\color{white}T(Y)&space;=&space;Y&space;-&space;\text{prox}_{\gamma&space;g}(Y)&space;&plus;&space;\text{prox}_{\gamma&space;f}(2\text{prox}_{\gamma&space;g}(Y)&space;-&space;Y&space;-&space;\gamma\mathcal{A}(\text{prox}_{\gamma&space;g}(Y)&space;-&space;X_{corrupt}))" alt="Proximal Operator Formula">
+</div>
 
 Iterating $Y_{k+1} = T(Y_k)$ ensures that $\text{prox}_{\gamma g}(Y)$ converges to the optimal solution for appropriate functions $f$ and $g$.
 
