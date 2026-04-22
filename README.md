@@ -32,7 +32,7 @@ Iterating $Y_{k+1} = T(Y_k)$ ensures that $\text{prox}_{\gamma g}(Y)$ converges 
 ## Repository Structure
 
 * **`algorithm.py`**: Contains the core logic for the iterative inpainter. It implements the sequence generation $Y_{k+1} = T(Y_k)$ to find the approximate solution for the regularized problem.
-* **`utils.py`**: A comprehensive collection of mathematical tools and helper functions, including:
+* **`utils.py`**: A collection of mathematical tools and helper functions, including:
     * Definitions for proximal operators.
     * The linear operator $\mathcal{A}$ for image corruption.
     * Nuclear norm calculation tools.
